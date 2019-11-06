@@ -15,7 +15,7 @@ app.get(`/hello`, (request, response) => {
     name: request.query.nameQuery
   });
 });
- 
+
 app.get(`/hello/:nameParam`, (request, response) => {
   response.render(`hello`, {
     name: request.params.nameParam
